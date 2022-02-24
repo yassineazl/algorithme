@@ -1,0 +1,20 @@
+
+var
+a,b,c,i:integer;
+repeat 
+write("Entrez une phrase");
+read(ch);
+until ch.length="."
+a:=0;
+b:=0;
+
+for (i=0;i<ch.length;i++){
+    if (ch[i]="" || ch[i]="."  ){
+        a:=a+1;
+    }
+    if (ch[i]="a" ||ch[i]="e" || ch[i]="y" || ch[i]="u" ||ch[i]="i" ||ch[i]="o" ||){
+        b:=b+1;
+    }
+}
+ 
+write ("la longueur de la phrase est ",ch.length, "le nombre de mots est ",a,"le nombre de voyelle est",b);
